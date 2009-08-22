@@ -1,0 +1,15 @@
+
+
+<h2><%= @media_list.length %> media items from <%= @url %></h2>
+<ul>
+  <% @media_list.each do |m| %>
+   <li>
+     <a href="/view/<%= m.id %>"><%= m.title %></a>
+     <ul>
+       <% m.elements.each do |e| %>
+         <li><%= e.name %>: <%= e.text %></li>
+       <%end %>
+      </ul>
+  </li>
+  <% end %>
+</ul>

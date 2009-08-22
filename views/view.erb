@@ -1,0 +1,31 @@
+
+<script type="text/javascript" src="http://video.nbcuni.com/framework/FrameworkManager.js?1 <http://video.nbcuni.com/framework/FrameworkManager.js?1> "></script>
+
+                <script type="text/javascript">
+
+                doAfterLoad(function(){
+
+                embeddedPlayerManager.setAttribute("targetDivID","videoplayer");
+
+                embeddedPlayerManager.setAttribute("companionContainerID","companiondiv");
+
+                embeddedPlayerManager.setAttribute("clipPlaylist","<%= @id %>");  // SET THE DIFFERENT CLIPS HERE  SEPORATED BY A COMMA
+
+                //embeddedPlayerManager.setAttribute("width",320);   // SET THE WIDTH
+
+                //embeddedPlayerManager.setAttribute("height",270);  // SET THE HEIGHT
+
+                embeddedPlayerManager.setAttribute("configID","18006");
+
+                embeddedPlayerManager.setAttribute("videoControls","controls/controls_ah.swf");
+
+                embeddedPlayerManager.setAttribute("overrideomniture","{'prop48':'UPX Video Player','pageName':'','prop8':'iCue','prop10':'','prop11':'','prop20':'nbcuicuebu'}");
+
+                embeddedPlayerManager.embedVideoPlayer();
+
+                });
+
+ </script>
+
+
+<div id="videoplayer" class="videoplayer"></div>
